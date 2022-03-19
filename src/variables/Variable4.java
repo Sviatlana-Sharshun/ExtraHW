@@ -15,10 +15,9 @@ public class Variable4 {
 
   public static void main(String[] args) {
     int toothCounter = 32;
-
-    //напишите тут ваш код
-
-
+    while (toothCounter > 23) {
+      toothCounter--;
+    }
     System.out.println(toothCounter);
   }
 }

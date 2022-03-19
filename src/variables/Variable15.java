@@ -10,5 +10,14 @@ package variables;
 
 public class Variable15 {
 
-  //напишите тут ваш код
+    class Solution{
+        byte a = 4;
+        short b = 8;
+        int c = 16;
+        long d = 32;
+        float f = 0.0001f;
+        double e = 0.0001;
+        boolean g = true;
+        char i = '$';
+    }
 }

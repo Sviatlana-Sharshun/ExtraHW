@@ -17,7 +17,9 @@ package variables;
 public class Variable5 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
-
+    String word = "слово";
+    String phrase = "цена";
+    String line = "линия";
+    String text = "текст";
   }
 }

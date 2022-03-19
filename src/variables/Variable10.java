@@ -1,5 +1,7 @@
 package variables;
 
+import java.util.Scanner;
+
 /**
  * Напиши программу, которая считывает с клавиатуры два вещественных числа (double) и выдает сообщение о том, равны ли эти числа с точностью до одной миллионной.
  * Требования:
@@ -12,9 +14,14 @@ package variables;
 public class Variable10 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
+    Scanner scanner = new Scanner(System.in);
+    double a = scanner.nextDouble();
+    double b = scanner.nextDouble();
+    scanner.close();
+
+    if (Math.round(a*1000000)==Math.round(b*1000000))
     System.out.println("числа равны");
-    //напишите тут ваш код
+    else
     System.out.println("числа не равны");
   }
 }

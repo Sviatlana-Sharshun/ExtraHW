@@ -17,9 +17,10 @@ package variables;
  */
 
 public class Variable16 {
-  double earthDiameter = 12742.0;
-  double lightSpeed = 299792458.0;
-  double uraniumAtomicMass = 238.0289;
-  double averageBeeWeight = 0.085;
-  double javaDeveloperSalary = 10000.0;
+  double earthDiameter = 12742.0; //12742E+4
+  double lightSpeed = 299792458.0; //299792458E+8
+  double uraniumAtomicMass = 238.0289; //238.0289E+2
+  double averageBeeWeight = 0.085; //85E-2
+  double javaDeveloperSalary = 10000.0; //1E+4
 }
+

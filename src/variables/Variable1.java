@@ -14,7 +14,9 @@ package variables;
 public class Variable1 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
-
+    int intValue = 0;
+    int numericValue = 1;
+    int size = 2;
+    int number = 3;
   }
 }

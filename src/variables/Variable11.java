@@ -1,5 +1,7 @@
 package variables;
 
+import java.util.Scanner;
+
 /**
  * Давай разделим ящик колы на кабинет программистов. Для этого напишем программу, в которой:
  *
@@ -21,7 +23,11 @@ package variables;
 public class Variable11 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
-
+    Scanner scanner = new Scanner(System.in);
+    int a = scanner.nextInt();
+    int b = scanner.nextInt();
+    scanner.close();
+    double c = (double) a / b;
+    System.out.println(c);
   }
 }

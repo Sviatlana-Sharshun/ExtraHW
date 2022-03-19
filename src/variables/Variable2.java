@@ -15,9 +15,7 @@ public class Variable2 {
 
   public static void main(String[] args) {
     int centimeters = 243;
-
-    int meters = 0; //напишите тут ваш код
-
+    double meters = (double) centimeters / 100;
     System.out.println(meters);
   }
 }

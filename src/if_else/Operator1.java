@@ -1,5 +1,7 @@
 package if_else;
 
+import java.util.Scanner;
+
 /**
  * Ввести с клавиатуры имя и возраст. Если возраст в пределах 18-28 (включительно),
  * то вывести надпись "Имя, явитесь в военкомат", где Имя - это имя, введенное ранее с клавиатуры.
@@ -20,6 +22,12 @@ public class Operator1 {
 
   public static void main(String[] args) {
     String militaryCommissar = ", явитесь в военкомат";
-    //напишите тут ваш код
+    Scanner scanner = new Scanner(System.in);
+    String name = scanner.nextLine();
+    int age = scanner.nextInt();
+    scanner.close();
+    if (age>=18&&age<=28){
+      System.out.println(name + ", явитесь в военкомат");
+    }
   }
 }

@@ -1,5 +1,7 @@
 package if_else;
 
+import java.util.Scanner;
+
 /**
  * Ввести с клавиатуры два целых числа, которые будут координатами точки (первое считанное число - это координата "x", а второе - координата "y"). Известно, что точка не лежит на координатных осях OX и OY.
  * Вывести на экран номер координатной четверти, в которой находится данная точка.
@@ -27,6 +29,17 @@ package if_else;
 public class Operator7 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
+    Scanner scanner = new Scanner (System.in);
+    int x = scanner.nextInt();
+    int y = scanner.nextInt();
+    scanner.close();
+    if (x>0 && y>0)
+      System.out.println(1);
+    if (x<0 && y>0)
+      System.out.println(2);
+    if (x<0 && y<0)
+      System.out.println(3);
+    if (x>0 && y<0)
+      System.out.println(4);
   }
 }
