@@ -16,7 +16,11 @@ public class Exceptions11 {
   public static String errorMessage = "не повезло";
 
   public static void main(String[] args) {
-//    generateLuckyNumber();
+  try {
+    generateLuckyNumber();
+  } catch (Exception e) {
+    System.out.println(errorMessage);;
+  }
   }
 
   static void generateLuckyNumber() throws Exception {

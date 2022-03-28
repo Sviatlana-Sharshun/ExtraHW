@@ -1,13 +1,16 @@
 package oop.inheritance.repka_difficult;
 
-public class Person {
+public class Person implements RepkaItem{
   private String name;
   private String namePadezh;
+
 
   public Person(String name, String namePadezh) {
     this.name = name;
     this.namePadezh = namePadezh;
   }
+
+
 
   public String getName() {
     return name;

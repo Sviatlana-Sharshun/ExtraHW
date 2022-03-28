@@ -15,7 +15,9 @@ public class Class2 {
 
   public static void main(String[] args) {
     String string = "12.84";
-    //напишите тут ваш код
+    Double a = Double.parseDouble(string);
+    int i = (int)Math.round(a);
+    System.out.println(i);
   }
 }
 

@@ -6,9 +6,9 @@ public class Robot {
 
   public static int id;
 
-  public static String model;
+  public String model;
 
-  public static int productionYear;
+  public int productionYear;
 
   public static String vendor = "Javarush Co.";
 

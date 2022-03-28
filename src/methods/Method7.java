@@ -14,8 +14,9 @@ package methods;
 public class Method7 {
 
   public static void main(String[] args) {
-
+    System.out.println(cube(3));
   }
-
-  //напишите тут ваш код
+  public static long cube(long a){
+    return (long) Math.pow(a, 3);
+  }
 }

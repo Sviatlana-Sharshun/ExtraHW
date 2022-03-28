@@ -20,11 +20,11 @@ public class Method11 {
   }
 
   public static void printSqrt(int[] array) {
-//    String elementSqrt = "Корень квадратный для числа ";
-//    for (int i = 0; i < array.length; i++) {
-//      int element = array[i];
-//      double elementSqrt = Math.sqrt(element);
-//      System.out.println(elementSqrt + element + " равен " + elementSqrt);
-//    }
+    String elementSqrta = "Корень квадратный для числа ";
+    for (int i = 0; i < array.length; i++) {
+      int element = array[i];
+      double elementSqrt = Math.sqrt(element);
+      System.out.println(elementSqrta + element + " равен " + elementSqrt);
+    }
   }
 }

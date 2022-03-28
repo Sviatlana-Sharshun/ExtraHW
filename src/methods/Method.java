@@ -18,7 +18,8 @@ package methods;
 
 
 public class Method {
-  public static void main(String[] args) {
+
+  public static void printHydrogenInfo(){
     System.out.println("Водород:");
     System.out.println("Это химический элемент периодической системы с обозначением H и атомным номером 1.");
     System.out.println("Является самым легким элементом таблицы.");
@@ -27,7 +28,9 @@ public class Method {
     System.out.println("-Нефтеперерабатывающей промышленности;");
     System.out.println("-Авиации;");
     System.out.println("-Электроэнергетике.");
+  }
 
+  public static void printJavaInfo(){
     System.out.println("Остров Ява:");
     System.out.println("Входит в состав Индонезии.");
     System.out.println("На острове зародились государства Матарам, Маджапахит, Демак.");
@@ -36,4 +39,11 @@ public class Method {
     System.out.println("Плотность населения — 1061 чел/км.кв.");
     System.out.println("Здесь производят один из знаменитых сортов кофе — Копи Лювак.");
   }
+
+
+  public static void main(String[] args) {
+    printHydrogenInfo();
+    printJavaInfo();
+  }
+
 }

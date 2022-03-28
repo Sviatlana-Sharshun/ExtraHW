@@ -1,5 +1,7 @@
 package methods;
 
+import java.util.Arrays;
+
 /**
  * Напишем утилиту для работы с массивами. Основная часть функционала готова: метод printArray() выводит в консоли все элементы массива.
  * Тебе осталась мелочь: реализовать метод reverseArray(). Он должен менять порядок элементов массива на обратный.
@@ -26,7 +28,10 @@ public class Method4 {
   }
 
   public static void reverseArray(int[] array) {
-    //напишите тут ваш код
+    for (int i=array.length-1; i >=0; i--) {
+      System.out.print(array[i] + ", ");
+           }
+           System.out.println();
   }
 
   public static void printArray(int[] array) {

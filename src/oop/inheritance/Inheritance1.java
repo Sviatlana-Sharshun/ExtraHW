@@ -14,10 +14,7 @@ package oop.inheritance;
 
 public class Inheritance1 {
 
-  public class ElectricCar {
-    double maxSpeed;
-    int wheelCount;
-    double weight;
+  public class ElectricCar extends Car {
     int electricEnginePower;
   }
 
@@ -26,10 +23,8 @@ public class Inheritance1 {
 
   }
 
-  public class Car {
-    double maxSpeed;
+  public class Car extends Vehicle{
     int wheelCount;
-    double weight;
   }
 
 }

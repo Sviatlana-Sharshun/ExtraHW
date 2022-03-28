@@ -19,6 +19,7 @@ package methods;
 
 public class Method14 {
 
+
   public static void main(String[] args) {
     System.out.println(getObjectType(new Cat()));
     System.out.println(getObjectType(new Tiger()));
@@ -29,12 +30,21 @@ public class Method14 {
   }
 
   public static String getObjectType(Object o) {
-    //напишите тут ваш код
+    if (o instanceof Lion) {
+      return "Лев";
+    } else if (o instanceof Tiger) {
+      return "Тигр";
+    } else if (o instanceof Cat) {
+      return "Кот";
+    } else if (o instanceof Bull) {
+      return "Бык";
+    } else if (o instanceof Cow) {
+      return "Корова";
+    } else return "Животное";
 
-    return "Животное";
   }
 
-  public static class Cat extends Animal   //<--Классы наследуются!!
+  public static class Cat extends Animal
   {
   }
 

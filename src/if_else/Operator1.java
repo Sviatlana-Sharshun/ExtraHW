@@ -27,7 +27,7 @@ public class Operator1 {
     int age = scanner.nextInt();
     scanner.close();
     if (age>=18&&age<=28){
-      System.out.println(name + ", явитесь в военкомат");
+      System.out.println(name + militaryCommissar);
     }
   }
 }
