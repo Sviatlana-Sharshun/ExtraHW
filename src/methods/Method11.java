@@ -15,7 +15,7 @@ package methods;
 
 public class Method11 {
   public static void main(String[] args) {
-    int[] array = {15,64,9,51,42};
+    int[] array = {15, 64, 9, 51, 42};
     printSqrt(array);
   }
 

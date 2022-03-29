@@ -16,7 +16,8 @@ public class Method7 {
   public static void main(String[] args) {
     System.out.println(cube(3));
   }
-  public static long cube(long a){
+
+  public static long cube(long a) {
     return (long) Math.pow(a, 3);
   }
 }

@@ -17,7 +17,7 @@ public class Person {
     return lastName;
   }
 
-  String getFullName(){
+  String getFullName() {
     return firstName + " " + lastName;
   }
 }

@@ -1,5 +1,7 @@
 package methods;
 
+import java.util.Scanner;
+
 /**
  * Перед тобой метод signIn(), который приветствует пользователей сайта. Сейчас он приветствует всех пользователей, а должен только зарегистрированных.
  * Имена всех незарегистрированных пользователей — "user".
@@ -15,7 +17,9 @@ package methods;
 public class Method6 {
 
   public static void main(String[] args) {
-
+  Scanner scanner = new Scanner(System.in);
+  String name = scanner.nextLine();
+  signIn(name);
   }
 
   public static void signIn(String username) {

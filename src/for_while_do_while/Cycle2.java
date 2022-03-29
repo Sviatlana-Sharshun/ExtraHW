@@ -29,5 +29,6 @@ public class Cycle2 {
       }
     }
     System.out.println(sum);
+    scanner.close();
   }
 }

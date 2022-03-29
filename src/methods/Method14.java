@@ -1,5 +1,7 @@
 package methods;
 
+import classes.Car;
+
 /**
  * Напиши метод, который определяет, какой объект в него передали.
  * Программа должна выводить на экран одну из надписей: «Кот», «Тигр», «Лев», «Бык», «Корова», «Животное».
@@ -21,12 +23,14 @@ public class Method14 {
 
 
   public static void main(String[] args) {
-    System.out.println(getObjectType(new Cat()));
-    System.out.println(getObjectType(new Tiger()));
-    System.out.println(getObjectType(new Lion()));
-    System.out.println(getObjectType(new Bull()));
-    System.out.println(getObjectType(new Cow()));
-    System.out.println(getObjectType(new Animal()));
+    System.out.println(new Cat().getClass().getSimpleName());
+
+//    System.out.println(getObjectType(new Cat()));
+//    System.out.println(getObjectType(new Tiger()));
+//    System.out.println(getObjectType(new Lion()));
+//    System.out.println(getObjectType(new Bull()));
+//    System.out.println(getObjectType(new Cow()));
+//    System.out.println(getObjectType(new Animal()));
   }
 
   public static String getObjectType(Object o) {

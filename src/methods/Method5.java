@@ -38,28 +38,30 @@ public class Method5 {
 
   }
 
-  public String universalMethod1(){
+  public String universalMethod1() {
     String name = scanner.nextLine();
     return name;
   }
 
-  public void universalMethod2(){
+  public void universalMethod2() {
     scanner.close();
   }
 
-  public static int universalMethod3(){
-  int random = (int) (Math.random()*100);
+  public static int universalMethod3() {
+    int random = (int) (Math.random() * 100);
     System.out.println(random);
     return random;
   }
-  public static void universalMethod4(){
+
+  public static void universalMethod4() {
   }
-  public static void universalMethod5(){
-    int [] array = new int [100];
-    for (int i = 0; i < array.length; i++){
-      array [i] = universalMethod3();
-  }
-    for (int a: array) {
+
+  public static void universalMethod5() {
+    int[] array = new int[100];
+    for (int i = 0; i < array.length; i++) {
+      array[i] = universalMethod3();
+    }
+    for (int a : array) {
       System.out.println(a);
     }
 

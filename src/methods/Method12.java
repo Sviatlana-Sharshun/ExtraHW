@@ -35,8 +35,8 @@ public class Method12 {
     printCityPopulation("Нью-Йорк", 21.6);
   }
 
-  public static void printCityPopulation(String city, double population){
-    Method12 method12 = new Method12(city,population);
+  public static void printCityPopulation(String city, double population) {
+    Method12 method12 = new Method12(city, population);
     System.out.println("Население города " + city + " составляет " + population + " млн человек.");
     System.out.println("В то время как в самом густонаселенном городе " + method12.city + " население составляет " + method12.population + " млн человек.");
   }

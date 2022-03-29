@@ -52,7 +52,7 @@ class Dog {
     this.speed = speed;
   }
 
-   private String getName() {
+  private String getName() {
     return name;
   }
 

@@ -25,7 +25,7 @@ public class Method3 {
     createCrew(navigator, pilot, secondPilot, flightEngineer);
   }
 
-  public static void createCrew(String navigator, String pilot, String secondPilot, String flightEngineer){
+  public static void createCrew(String navigator, String pilot, String secondPilot, String flightEngineer) {
     System.out.println("Четвёрка, которой предстоит покорить космос:");
     System.out.println("Штурман: " + navigator);
     System.out.println("Пилот: " + pilot);

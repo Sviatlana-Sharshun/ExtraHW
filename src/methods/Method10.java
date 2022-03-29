@@ -8,7 +8,6 @@ package methods;
  * •	Нужно добавить минимально необходимое количество модификаторов static.
  */
 
-// раскомментируйте
 public class Method10 {
   public static void main(String[] args) {
     int[] array = {123, 7, -14, 67, 16, 98, 75, 576};

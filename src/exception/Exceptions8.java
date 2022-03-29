@@ -11,6 +11,7 @@ import java.nio.file.FileSystemException;
  * •	Все перехваченные исключения нужно оборачивать в RuntimeException и пробрасывать дальше.
  * •	У метода copyFile не должно быть исключений в секции throws.
  */
+
 public class Exceptions8 {
 
   public static void main(String[] args) {
@@ -23,7 +24,7 @@ public class Exceptions8 {
       FileUtils.readFile(sourceFile);
       FileUtils.writeFile(destinationFile);
     } catch (FileNotFoundException | FileSystemException e) {
-      throw new RuntimeException (e);
+      throw new RuntimeException(e);
     }
   }
 }

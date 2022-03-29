@@ -28,10 +28,10 @@ public class Method4 {
   }
 
   public static void reverseArray(int[] array) {
-    for (int i=array.length-1; i >=0; i--) {
+    for (int i = array.length - 1; i >= 0; i--) {
       System.out.print(array[i] + ", ");
-           }
-           System.out.println();
+    }
+    System.out.println();
   }
 
   public static void printArray(int[] array) {
