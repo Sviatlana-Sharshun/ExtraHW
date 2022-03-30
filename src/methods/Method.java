@@ -40,7 +40,6 @@ public class Method {
     System.out.println("Здесь производят один из знаменитых сортов кофе — Копи Лювак.");
   }
 
-
   public static void main(String[] args) {
     printHydrogenInfo();
     printJavaInfo();
