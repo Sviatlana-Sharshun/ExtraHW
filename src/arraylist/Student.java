@@ -1,14 +1,13 @@
 package arraylist;
 
 public class Student {
-    private String name;
+  private String name;
 
-    public Student(String name) {
-        this.name = name;
-    }
+  public Student(String name) {
+    this.name = name;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public String getName() {
+    return name;
+  }
 }
-
