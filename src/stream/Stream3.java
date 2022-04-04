@@ -1,4 +1,8 @@
 package stream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.Scanner;
 
 /**
  * Напиши программу, которая считывает из консоли имя текстового файла,
@@ -13,6 +17,16 @@ package stream;
 public class Stream3 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
-  }
+      try (Scanner scanner = new Scanner(System.in)){
+        List<String> lines = Files.readAllLines(Paths.get(scanner.nextLine()));
+        for (String str : lines){
+          char[] chars = str.toCharArray();
+        for (char character: chars) {
+          System.out.println(character);
+        }
+        }
+      } catch (Exception e) {
+        System.out.println("Something went wrong : " + e);
+      }
+    }
 }

@@ -33,9 +33,28 @@ public class List6 {
 
   public static void main(String[] args) {
     initEmployees();
+    for (String str: waitingEmployees) {
+      paySalary(str);
+    }
+    for (String str: waitingEmployees) {
+      System.out.println(str);
+    }
+    for (String str: alreadyGotSalaryEmployees) {
+      System.out.println(str);
+    }
+
+
   }
 
   public static void paySalary(String name) {
-    //напишите тут ваш код
+    if (waitingEmployees.contains(name) && !alreadyGotSalaryEmployees.contains(name)){
+    alreadyGotSalaryEmployees.add(name);
+      for (int i = 0; i < waitingEmployees.size(); i++) {
+        if (waitingEmployees.get(i)!=null&&waitingEmployees.contains(name)){
+          waitingEmployees.set(i,null);
+          break;
+        }
+      }
+    }
   }
 }

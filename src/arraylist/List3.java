@@ -13,19 +13,19 @@ import java.util.ArrayList;
 
 public class List3 {
 
-  public static void printAnything(ArrayList<String> arrayList) {
+  public static void printAnything(ArrayList<Object> arrayList) {
     for (int i = 0; i < arrayList.size(); i++) {
       System.out.println(arrayList.get(i));
     }
   }
 
   public static void main(String[] args) {
-//    var arrayList = new ArrayList<>();
-//    arrayList.add(15);
-//    arrayList.add("Hello");
-//    arrayList.add(154);
-//    arrayList.add("string2");
+    var arrayList = new ArrayList<>();
+    arrayList.add(15);
+    arrayList.add("Hello");
+    arrayList.add(154);
+    arrayList.add("string2");
 
-//    printAnything(arrayList);
+    printAnything(arrayList);
   }
 }

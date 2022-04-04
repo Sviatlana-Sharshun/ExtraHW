@@ -26,7 +26,7 @@ public class Stream2 {
       byte[] buffer = new byte[size];
       while (inputStream.available() > 0) {
         int read = inputStream.read();
-        outputStream.write(buffer, size, read);
+        outputStream.write(buffer, 0, read);
         System.out.println(read);
       }
     } catch (Exception e) {

@@ -25,6 +25,10 @@ public class Set1 {
   }
 
   public static HashSet<String> arrayToHashSet(String[] strings) {
-    return null;//напишите тут ваш код
+    HashSet<String> hashSet = new HashSet<>();
+    for (int i = 0; i < strings.length; i++) {
+      hashSet.add(strings[i]);
+    }
+    return hashSet;
   }
 }

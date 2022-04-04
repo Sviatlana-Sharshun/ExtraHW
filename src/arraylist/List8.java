@@ -1,6 +1,8 @@
 package arraylist;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Locale;
 
 /**
  * В классе List8 объявлены методы, которые тебе нужно реализовать следующим образом:
@@ -50,14 +52,32 @@ public class List8 {
   }
 
   public static void removeBugWithFor(ArrayList<String> list) {
-    //напишите тут ваш код
+    for (int i = 0; i < list.size(); i++) {
+      String a = list.get(i);
+      if (a.equalsIgnoreCase("bug")) {
+        list.remove(a);
+        i--;
+      }
+    }
   }
 
   public static void removeBugWithWhile(ArrayList<String> list) {
-    //напишите тут ваш код
+    Iterator<String> listIterator = list.iterator();
+    while(listIterator.hasNext()) {
+      String nextList = listIterator.next();
+      if (nextList.equalsIgnoreCase("bug")) {
+        listIterator.remove();
+      }
+    }
   }
 
   public static void removeBugWithCopy(ArrayList<String> list) {
-    //напишите тут ваш код
+    ArrayList<String> copy = new ArrayList(list);
+    for (String lis: copy){
+      if (lis.equalsIgnoreCase("bug")) {
+        list.remove(lis);
+      }
+
+    }
   }
 }

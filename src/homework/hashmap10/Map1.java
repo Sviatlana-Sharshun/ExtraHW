@@ -1,4 +1,4 @@
-package hashmap10;
+package homework.hashmap10;
 
 import java.util.HashMap;
 

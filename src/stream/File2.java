@@ -1,6 +1,8 @@
 package stream;
 
 import java.io.IOException;
+import java.nio.file.DirectoryStream;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Scanner;
 
@@ -35,6 +37,15 @@ public class File2 {
   public static void main(String[] args) throws IOException {
     Scanner scanner = new Scanner(System.in);
     Path directory = Path.of(scanner.nextLine());
-    //напишите тут ваш код
+    if (Files.isRegularFile(directory)) {
+      System.out.println(directory + THIS_IS_FILE);
+    } else if (Files.isDirectory(directory)) {
+      try (DirectoryStream<Path> files = Files.newDirectoryStream(directory)) {
+        for (Path path : files)
+          System.out.println(path + THIS_IS_DIR);
+      }
+    }
+
+
   }
 }
