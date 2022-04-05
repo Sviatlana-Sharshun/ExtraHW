@@ -1,6 +1,7 @@
 package arraylist;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 /**
@@ -24,6 +25,7 @@ public class List10 {
       list.set(i, list.get(j - i));
       list.set(j - i, integer);
     }
+ //   Collections.reverse(list);
   }
 
   public static void sort(ArrayList<Integer> list) {
@@ -38,6 +40,7 @@ public class List10 {
         }
       }
     }
+ //   Collections.sort(list);
   }
 
   public static void rotate(ArrayList<Integer> list, int distance) {
@@ -55,5 +58,6 @@ public class List10 {
       list.set(randomIndexToSwap, list.get(i));
       list.set(i, temp);
     }
+ //   Collections.shuffle(list);
   }
 }

@@ -10,7 +10,7 @@ package classes;
  * •	Должны быть исправлены геттер и сеттер для поля modelName.
  */
 
-
+//или создавать объект
 public class Car {
 
   private String modelName;

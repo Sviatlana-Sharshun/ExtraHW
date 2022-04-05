@@ -17,6 +17,7 @@ public class Map3 {
 
     public static HashMap<String, Double> grades = new HashMap<>();
 
+
     public static void main(String[] args) {
         addStudents();
         printStudentsInfo();
@@ -31,6 +32,13 @@ public class Map3 {
     }
 
     public static void printStudentsInfo() {
-        //напишите тут ваш код
+
+            for(var pair: grades.entrySet())
+            {
+                String key = pair.getKey();
+                Double value = pair.getValue();
+                System.out.println(key + " --> " + value);
+            }
+        }
     }
-}
+

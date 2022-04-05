@@ -14,9 +14,12 @@ package oop.incapsulation;
 public class Incapsulation1 {
 
   public static void main(String[] args) {
+    Cat cat = new Cat ("kat", 1,10);
+    cat.setWeight(8);
+    System.out.println(cat.getName() + cat.weight);
   }
 
-  public class Cat {
+  public static class Cat {
     private String name;
     private int age;
     private int weight;
@@ -30,18 +33,20 @@ public class Incapsulation1 {
     }
 
     public String getName() {
-      return null;
+      return name;
     }
 
     public int getAge() {
-      return 0;
+      return age;
     }
 
     public void setWeight(int weight) {
+      this.weight = weight;
 
     }
 
     public void setSpeed(int speed) {
+      this.speed = speed;
 
     }
   }

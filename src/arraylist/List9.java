@@ -1,6 +1,8 @@
 package arraylist;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 /**
  * В классе List9 объявлены методы: copy(ArrayList<String>, ArrayList<String>), addAll(ArrayList<String>, String...), replaceAll(ArrayList<String>, String, String). Тебе нужно переписать их реализацию, используя при этом только соответствующие методы класса Collections.
@@ -23,12 +25,14 @@ public class List9 {
     for (int i = 0; i < source.size(); i++) {
       destination.set(i, source.get(i));
     }
+//    Collections.copy(destination,source);
   }
 
   public static void addAll(ArrayList<String> list, String... strings) {
     for (String string : strings) {
       list.add(string);
     }
+    // Collections.addAll(list);
   }
 
   public static void replaceAll(ArrayList<String> list, String oldValue, String newValue) {
@@ -38,5 +42,6 @@ public class List9 {
         list.set(i, newValue);
       }
     }
+    // Collections.replaceAll(list, oldValue, newValue);
   }
 }

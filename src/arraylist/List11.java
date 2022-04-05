@@ -1,6 +1,7 @@
 package arraylist;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * В классе List11 объявлены методы: min(ArrayList<Integer>), max(ArrayList<Integer>), frequency(ArrayList<Integer>, Integer), binarySearch(ArrayList<Integer>, Integer). Тебе нужно разобраться, что делают методы, переписать их реализацию, используя при этом только соответствующие методы класса Collections.
@@ -23,6 +24,7 @@ public class List11 {
       if (list.get(i) < minimum) {
         minimum = list.get(i);
       }
+//      Collections.min(list);
     }
     return minimum;
   }
@@ -33,6 +35,7 @@ public class List11 {
       if (list.get(i) > maximum) {
         maximum = list.get(i);
       }
+ //     Collections.max(list);
     }
     return maximum;
   }
@@ -50,6 +53,7 @@ public class List11 {
         }
       }
     }
+    // Collections.frequency(list, element);
     return frequency;
   }
 
@@ -69,6 +73,7 @@ public class List11 {
       }
       mid = (low + high) / 2;
     }
+ //   Collections.frequency(list, key);
     return index;
   }
 }
