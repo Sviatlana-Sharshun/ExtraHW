@@ -1,4 +1,4 @@
-package hashmap10;
+package hashset;
 
 import java.util.Arrays;
 import java.util.HashSet;

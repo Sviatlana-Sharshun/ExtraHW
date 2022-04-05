@@ -24,8 +24,9 @@ public class File4 {
     Path sourceDirectory = Path.of(scanner.nextLine());
     Path targetDirectory = Path.of(scanner.nextLine());
     try (DirectoryStream<Path> files = Files.newDirectoryStream(sourceDirectory)) {
-      for (Path path : files)
+      for (Path path : files) {
         Files.move(path, targetDirectory);
+      }
     }
   }
 }

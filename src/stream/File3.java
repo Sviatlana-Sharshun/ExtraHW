@@ -27,8 +27,9 @@ public class File3 {
     Path sourceDirectory = Path.of(scanner.nextLine());
     Path targetDirectory = Path.of(scanner.nextLine());
     try (DirectoryStream<Path> files = Files.newDirectoryStream(sourceDirectory)) {
-      for (Path path : files)
-        Files.copy(path,targetDirectory);
+      for (Path path : files) {
+        Files.copy(path, targetDirectory);
+      }
     }
   }
 }

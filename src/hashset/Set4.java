@@ -1,9 +1,8 @@
-package hashmap10;
+package hashset;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Iterator;
 
 /**
  * В классе Set4 есть методы printHashSet(HashSet<String>) и printList(ArrayList<String>), которые выводят все элементы из переданных коллекций — списка и множества — с новой строки. Твоя задача переписать методы на использование цикла for-each.
