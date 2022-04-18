@@ -1,6 +1,9 @@
 package oop.poliformism.right_movement;
 
 public class Bat extends Animal {
-  //напишите тут ваш код
+    @Override
+    public void move() {
+        System.out.println("Я лечу");;
+    }
 }
 

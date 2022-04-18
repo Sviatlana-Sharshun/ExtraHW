@@ -9,4 +9,10 @@ package oop.interfaces;
  */
 
 public class Inheritance5 { // не относится к заданию, создаем новые интерфейсы
+    public interface Swimmable {
+        public void swim();
+    }
+    public interface Flyable {
+        public void fly();
+    }
 }

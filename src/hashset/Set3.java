@@ -13,15 +13,16 @@ import java.util.Iterator;
  */
 public class Set3 {
 
-  public static void print(HashSet<String> words) {
-    Iterator<String> interatorSet = words.iterator();
-    while (interatorSet.hasNext()){
-    String a = interatorSet.next();
-    System.out.println(a);
-  }}
+    public static void print(HashSet<String> words) {
+        Iterator<String> interatorSet = words.iterator();
+        while (interatorSet.hasNext()) {
+            String a = interatorSet.next();
+            System.out.println(a);
+        }
+    }
 
-  public static void main(String[] args) {
-    HashSet<String> words = new HashSet<>(Arrays.asList("Программированию обычно учат на примерах.".split(" ")));
-    print(words);
-  }
+    public static void main(String[] args) {
+        HashSet<String> words = new HashSet<>(Arrays.asList("Программированию обычно учат на примерах.".split(" ")));
+        print(words);
+    }
 }

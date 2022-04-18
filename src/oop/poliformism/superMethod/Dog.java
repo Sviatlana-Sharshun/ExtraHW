@@ -1,7 +1,11 @@
 package oop.poliformism.superMethod;
 
 public class Dog extends Pet {
-  public static final String DOG = "Я люблю людей.";
+  @Override
+  public void printInfo() {
+    super.printInfo();
+    System.out.println(DOG);
+  }
 
-  //напишите тут ваш код
+  public static final String DOG = "Я люблю людей.";
 }

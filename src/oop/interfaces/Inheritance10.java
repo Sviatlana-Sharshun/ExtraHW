@@ -17,18 +17,25 @@ package oop.interfaces;
 public class Inheritance10 {
 
   public interface Flyable {
-    default int getMaxSpeed(){
-      return 80;
-    }
+    void getMaxSpeed();
   }
 
   public class Aircraft implements Flyable {
+    public void getMaxSpeed(){
+      System.out.println("Максимальная скорость Самолета — 1200 км/ч");
+    }
   }
 
   public class Eagle implements Flyable {
+    public void getMaxSpeed(){
+      System.out.println("Максимальная скорость Орла — 180 км/ч");
+    }
   }
 
   public class Raven implements Flyable {
+    public void getMaxSpeed(){
+      System.out.println("Максимальная скорость Ворона — 48 км/ч");
+    }
   }
 
 }

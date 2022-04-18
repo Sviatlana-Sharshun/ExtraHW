@@ -1,5 +1,8 @@
 package oop.poliformism.geometriya;
 
 public class Triangle extends Shape {
-  //напишите тут ваш код
+    @Override
+    public void printInfo() {
+        System.out.println("Треугольник");
+    }
 }
