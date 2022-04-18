@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 /**
  * Для начала разберись, что делает программа, а затем:
- *
+ * <p>
  * В методе addUser обработай значение, возвращаемое методом setName:
  * если setName вернул -1, выведи сообщение: "Имя не может быть null."
  * если -2, выведи сообщение: "Имя не может быть пустым."
@@ -28,68 +28,69 @@ import java.util.Scanner;
 
 public class Exceptions {
 
-  public static final String INPUT_NAME = "\nВведите имя: ";
-  public static final String INPUT_AGE = "Введите возраст пользователя '%s': ";
+    public static final String INPUT_NAME = "\nВведите имя: ";
+    public static final String INPUT_AGE = "Введите возраст пользователя '%s': ";
 
-  public static final String CANNOT_BE_NULL = "Имя не может быть null.";
-  public static final String CANNOT_BE_EMPTY = "Имя не может быть пустым.";
-  public static final String CANNOT_CONTAIN_DIGIT = "Имя не может содержать цифры.";
-  public static final String CANNOT_BE_NEGATIVE = "Возраст не может быть меньше 0.";
-  public static final String CANNOT_BE_TOO_BIG = "Возраст не может быть больше 150.";
-  public static final String UNKNOWN_ERROR = "Неизвестная ошибка.";
+    public static final String CANNOT_BE_NULL = "Имя не может быть null.";
+    public static final String CANNOT_BE_EMPTY = "Имя не может быть пустым.";
+    public static final String CANNOT_CONTAIN_DIGIT = "Имя не может содержать цифры.";
+    public static final String CANNOT_BE_NEGATIVE = "Возраст не может быть меньше 0.";
+    public static final String CANNOT_BE_TOO_BIG = "Возраст не может быть больше 150.";
+    public static final String UNKNOWN_ERROR = "Неизвестная ошибка.";
 
-  public static final String FOUND = "\nПользователь '%s' найден под индексом %d.\n";
-  public static final String NOT_FOUND = "\nПользователь '%s' не найден.\n";
+    public static final String FOUND = "\nПользователь '%s' найден под индексом %d.\n";
+    public static final String NOT_FOUND = "\nПользователь '%s' не найден.\n";
 
-  static List<User> users = new ArrayList<>();  // перейдите в класс User ctrl + клик на User
-  static Scanner scanner = new Scanner(System.in);
+    static List<User> users = new ArrayList<>();  // перейдите в класс User ctrl + клик на User
+    static Scanner scanner = new Scanner(System.in);
 
-  public static void main(String[] args) {
-    for (int i = 0; i < 5; i++) {
-      addUser(new User());
+    public static void main(String[] args) {
+        for (int i = 0; i < 5; i++) {
+            addUser(new User());
+        }
+
+        User userToSearch = new User();
+        userToSearch.setName("Рафаэль");
+
+        findUserIndex(userToSearch);
     }
 
-    User userToSearch = new User();
-    userToSearch.setName("Рафаэль");
+    static void addUser(User user) {
+        System.out.print(INPUT_NAME);
+        String name = scanner.nextLine();
 
-    findUserIndex(userToSearch);
-  }
+        System.out.printf(INPUT_AGE, name);
+        int age = Integer.parseInt(scanner.nextLine());
 
-  static void addUser(User user) {
-    System.out.print(INPUT_NAME);
-    String name = scanner.nextLine();
+        int x = user.setName(name);
 
-    System.out.printf(INPUT_AGE, name);
-    int age = Integer.parseInt(scanner.nextLine());
-
-     int x = user.setName(name);
-
-    if (x == -1) {
-      System.out.println(CANNOT_BE_NULL);
-    }else if (x == -2){
-      System.out.println(CANNOT_BE_EMPTY);
-    }else if (x == -3){
-      System.out.println(CANNOT_CONTAIN_DIGIT);
-    }else if (x != 0){
-      System.out.println(UNKNOWN_ERROR);
+        if (x == -1) {
+            System.out.println(CANNOT_BE_NULL);
+        } else if (x == -2) {
+            System.out.println(CANNOT_BE_EMPTY);
+        } else if (x == -3) {
+            System.out.println(CANNOT_CONTAIN_DIGIT);
+        } else if (x != 0) {
+            System.out.println(UNKNOWN_ERROR);
+        }
+        int q = user.setAge(age);
+        if (x == -1) {
+            System.out.println(CANNOT_BE_NEGATIVE);
+        } else if (x == -2) {
+            System.out.println(CANNOT_BE_TOO_BIG);
+        } else if (x != 0) {
+            System.out.println(UNKNOWN_ERROR);
+        }
+        users.add(user);
     }
-    int q = user.setAge(age);
-    if (x == -1) {
-      System.out.println(CANNOT_BE_NEGATIVE);
-    }else if (x == -2){
-      System.out.println(CANNOT_BE_TOO_BIG);
-    }else if (x != 0){
-      System.out.println(UNKNOWN_ERROR);
+
+    static void findUserIndex(User user) {
+        int a = users.indexOf(user);
+        if (a == -1) {
+            System.out.printf(NOT_FOUND, user.getName(), users.indexOf(user));
+
+        } else {
+            System.out.printf(FOUND, user.getName(), users.indexOf(user));
+        }
     }
-    users.add(user);
-  }
-
-  static void findUserIndex(User user) {
-    int a = users.indexOf(user);
-    if (a==-1){
-      System.out.printf(NOT_FOUND , user.getName(), users.indexOf(user));
-
-    }else {
-    System.out.printf(FOUND, user.getName(), users.indexOf(user));
-  }
-}}
+}

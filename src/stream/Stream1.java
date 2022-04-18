@@ -1,5 +1,8 @@
 package stream;
 
+import java.nio.file.Path;
+import java.util.Scanner;
+
 /**
  * Напиши программу, которая считывает с консоли путь к файлу1 и путь к файлу2.
  * Далее все байты из файла1 записывает в файл2, но при этом меняет их местами по такому принципу: первый со вторым, третий с четвертым, и т.д.
@@ -16,6 +19,9 @@ package stream;
 public class Stream1 {
 
   public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    String file1 = scanner.nextLine();
+    String file2 = scanner.nextLine();
 
   }
 }

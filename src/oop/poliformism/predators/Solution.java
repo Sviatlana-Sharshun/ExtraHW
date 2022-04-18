@@ -1,6 +1,5 @@
 package oop.poliformism.predators;
 
-import oop.poliformism.right_movement.Animal;
 
 /**
  * Перед тобой 4 класса животных — Cow, Lion, Wolf и Elephant. Корова (Cow) и слон (Elephant) являются травоядными, поэтому они наследуются от класса Herbivore.
@@ -16,16 +15,22 @@ import oop.poliformism.right_movement.Animal;
 
 public class Solution {
   public static void main(String[] args) {
-//    printRation(new Cow());
-//    printRation(new Lion());
-//    printRation(new Elephant());
-//    printRation(new Wolf());
+    printRation(new Cow());
+    printRation(new Lion());
+    printRation(new Elephant());
+    printRation(new Wolf());
   }
 
-  public static void printRation(Animal animal){
+  public static void printRation(Animal animal) {
     String herbivore = "Любит траву";
     String predator = "Любит мясо";
 
-    //напишите тут ваш код
+    if (animal instanceof Herbivore) {
+      System.out.println(herbivore);
+    } else {
+      System.out.println(predator);
+    }
   }
 }
+
+

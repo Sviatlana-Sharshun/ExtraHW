@@ -12,29 +12,32 @@ package oop.interfaces;
 
 public class Inheritance9 {
 
-  public interface Vehicle {
-   default void start(){
-     System.out.println("Начинаю движение.");
-   }
-    void move();
-    default void stop(){
-      System.out.println("Останавливаюсь.");
-    };
-  }
+    public interface Vehicle {
+        default void start() {
+            System.out.println("Начинаю движение.");
+        }
 
-  public class Car implements Vehicle {
+        void move();
 
-    public void move() {
-      System.out.println("Еду со средней скоростью 70 км/ч.");
+        default void stop() {
+            System.out.println("Останавливаюсь.");
+        }
+
     }
 
-  }
+    public class Car implements Vehicle {
 
-  public class Bus implements Vehicle{
+        public void move() {
+            System.out.println("Еду со средней скоростью 70 км/ч.");
+        }
 
-    public void move() {
-      System.out.println("Еду со средней скоростью 50 км/ч.");
     }
 
-  }
+    public class Bus implements Vehicle {
+
+        public void move() {
+            System.out.println("Еду со средней скоростью 50 км/ч.");
+        }
+
+    }
 }

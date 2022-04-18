@@ -20,7 +20,6 @@ public class Exceptions11 {
       generateLuckyNumber();
     } catch (Exception e) {
       System.out.println(errorMessage);
-      ;
     }
   }
 
